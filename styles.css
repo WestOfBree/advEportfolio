@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    /* font-size: 16px; */
+    color: #242424;
+    font-family: "Roboto", sans-serif;
+}
+/*
+
+GENERAL STYLES
+
+*/
+p{ 
+    font-size: 16px;
+    line-height: 1.5;
+}
+i{
+color: #FE9992;
+}
+.click{
+    transition: all 300ms ease;
+}
+.click:hover{
+    transform: scale(1.1);
+    color: #9992FE;
+}
+.click:active{
+    transform: scale(0.8);
+}
+/*
+
+NAV STYLES
+
+*/
+
+.logo{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+    height: 100%;
+}
+.nav__links--list{
+    display: flex;
+}
+.nav__link{
+    margin: 0 12px;
+
+}
+
+/*
+
+LANDING PAGE STYLES
+
+*/
+#landing-page{
+    min-height: 100vh;
+}
+.header__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.purple{
+    color: #FE9992;
+}
+
+.blurb__purple{
+    font-weight: bold;
+}
+.header__blurb{
+font-size: 24px;
+line-height: 2;
+max-width: 450px;
+}
+.social__link{
+    margin-top: 16px;
+    font-size: 24px;
+    padding-right: 10px;
+}
+.mailTo{
+    height: 70px;
+    width: 70px;
+    font-size: 32px;
+    background-color: #242424;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+}
+.mailTo i{
+    color: white;
+}
+
+/* got tired, left off at 20:33 */
