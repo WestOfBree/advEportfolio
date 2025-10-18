@@ -36,6 +36,42 @@ i {
   padding: 50px 0;
   width: 100%;
 }
+input,
+textarea{
+  width: 100%;
+  outline: none;
+  border: 3px solid #FFBFB8;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+}
+input:hover,
+textarea:hover{
+
+}
+.input:focus,
+textarea:focus{
+border-color: #fe9992;
+}
+form{
+  width: 100%;
+  padding: 0 42px;
+}
+.form__item{
+  margin-bottom: 20px;
+}
+.form__item--label{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+textarea{
+  resize: vertical;
+  height: 150px;
+  max-height: 320px;
+  margin-top: 8px;
+}
 .row {
   width: 100%;
   max-width: 1100px;
@@ -182,7 +218,7 @@ LANDING PAGE STYLES
 
 /*
 
-NAV STYLES
+MODAL STYLES
 
 */
 
@@ -215,7 +251,7 @@ NAV STYLES
 }
 .modal__about--desc{
   line-height: 1.75;
-  padding: 24px;
+  padding: 12px 24px 32px 24px;
   color: white
 }
 .languages__icons--wrapper{
@@ -252,6 +288,7 @@ NAV STYLES
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .modal__about--title,
 .modal__about--sub-title{
@@ -260,6 +297,35 @@ NAV STYLES
 .modal__about--title,
 .modal__contact--title{
   font-size: 26px;
+  margin-bottom:  8px;
+}
+.modal__contact--sub-title{
+  margin-bottom: 24px;
+}
+.modal__contact--boop{
+  padding: 12px 20px;
+  border: none;
+  border-radius: 45%;
+  background-color: #FFBFB8;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  transition: background-color, color 300ms ease;
+}
+.modal__contact--boop:hover{
+  background-color: #fe9992;
+  color: white;
+}
+.modal__contact--boop:active{
+  transform: translateY(1px);
+}
+.modal__contact--boop--container{
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  
 }
 /*
 
@@ -370,3 +436,4 @@ footer{
 .hover-white{
   background-color: white;
 }
+/* got tired, left off at 10:45 */
