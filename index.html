@@ -41,7 +41,7 @@
     link__hover--pink
     ">Contact</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleContrast()">
                     <a href="#" class="
     nav__link--anchor
     link__hover
@@ -53,7 +53,7 @@
         <header class="header">
             <div class="header__content">
                 <h1 class="title">Hey,
-                    <br><span class="purple title">I'm Bree.</span>
+                    <br><span class="purple">I'm Bree.</span>
                 </h1>
                 <div class="header__blurb">
                     <p>I'm a budding <span class="purple blurb__purple">Frontend Software Engineer</span> with a passion
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <button class="mailTo click"><i class="fa-regular fa-envelope"></i></button>
+            <button class="mailTo click" onclick="toggleModal()"><i class="fa-regular fa-envelope"></i></button>
             <a href="#projects" class="scroll">
                 <div class="scroll__icon click"></div>
             </a>
@@ -92,7 +92,8 @@
                     I'm currently a student in the FES Institute program and am <span class="purple">eager</span> to
                     build a portfolio of <span class="purple">amazing projects!</span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores vel, fuga molestiae earum porro
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime dolorem. Dolores similique debitis est.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime dolorem. Dolores similique
+                    debitis est.
                 </p>
                 <div class="languages__icons--wrapper">
                     <div class="languages__icons--container">
@@ -114,33 +115,48 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <button class="exit click"><i class="fa-solid fa-times"></i></button>
                 <h3 class="modal__contact--title">
                     Interested?
                 </h3>
                 <h4 class="modal__contact--sub-title">
                     Lets talk about your next project!
                 </h4>
-              <form action="" id="contact-form">
-                <div class="form__item">
-                    <label  class="form__item--label">Name</label>
-                    <input type="text" class="input" name="user_name" required></input>
+                <form action="" id="contact-form" onsubmit="contact()">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input type="text" class="input" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input type="email" class="input" email="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" class="input" name="message" required></textarea>
+                    </div>
+
+                    <div class="modal__contact--boop--container">
+                        <button class="modal__contact--boop">
+                            Send
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spiral"></i>
                 </div>
-                <div class="form__item">
-                    <label  class="form__item--label">Email</label>
-                    <input type="email" class="input" email="user_name" required></input>
-                </div>
-                <div class="form__item">
-                    <label  class="form__item--label">Message</label>
-                    <textarea type="text" class="input" name="message" required></textarea>
-                </div>
-              </form>
-              <div class="modal__contact--boop--container">
-              <button class="modal__contact--boop">
-                Send
-              </button>
-              </div>
             </div>
+
         </div>
+        <img src="./assets/cherry.png" alt="" class="cherry rotate-1 petal--0">
+        <img src="./assets/cherry.png" alt="" class="cherry petal--1">
+        <img src="./assets/cherry.png" alt="" class="cherry rotate-1 petal--2">
+        <img src="./assets/cherry.png" alt="" class="cherry petal--3">
+        <img src="./assets/cherry.png" alt="" class="cherry petal--4">
+        <img src="./assets/cherry.png" alt="" class="cherry petal--5">
+        <img src="./assets/cherry.png" alt="" class="cherry rotate-1 petal--6">
+        <img src="./assets/cherry.png" alt="" class="cherry rotate-1 petal--7">
+        <img src="./assets/cherry.png" alt="" class="cherry petal--8">
     </section>
 
 
