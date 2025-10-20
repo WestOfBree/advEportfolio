@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
 
         <nav>
             <figure>
@@ -20,7 +20,7 @@
                 <!-- <img src="" alt="" class="logo"> -->
             </figure>
             <ul class="nav__links--list">
-                <li class="nav__link">
+                <li onclick="toggleModal()"class="nav__link">
                     <a href="#" class="
     nav__link--anchor
     link__hover
@@ -28,13 +28,13 @@
     ">About</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#" class="
+                    <a href="#projects" class="
     nav__link--anchor
     link__hover
     link__hover--pink
     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li onclick="toggleModal()"class="nav__link">
                     <a href="#" class="
     nav__link--anchor
     link__hover
@@ -72,7 +72,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#">
             <button class="mailTo click" onclick="toggleModal()"><i class="fa-regular fa-envelope"></i></button>
+            </a>
             <a href="#projects" class="scroll">
                 <div class="scroll__icon click"></div>
             </a>
@@ -91,9 +93,7 @@
                     <br>
                     I'm currently a student in the FES Institute program and am <span class="purple">eager</span> to
                     build a portfolio of <span class="purple">amazing projects!</span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores vel, fuga molestiae earum porro
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, maxime dolorem. Dolores similique
-                    debitis est.
+                    
                 </p>
                 <div class="languages__icons--wrapper">
                     <div class="languages__icons--container">
@@ -160,7 +160,7 @@
     </section>
 
 
-    <section class="projects">
+    <section id="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section-title">Here are some of my <span class="purple">projects.</span></h1>

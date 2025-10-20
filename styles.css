@@ -16,7 +16,7 @@ GENERAL STYLES
 
 */
 p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
 }
 i {
@@ -42,6 +42,7 @@ nav,
   opacity: 1;
   visibility: visible;
   transition: all 400ms;
+  padding: 12px;
 }
 .modal--open nav,
 .modal--open .scroll{
@@ -223,6 +224,7 @@ LANDING PAGE STYLES
   cursor: pointer;
   bottom: 32px;
   right: 40px;
+  z-index: 1;
 }
 .mailTo i {
   color: white;
@@ -510,6 +512,7 @@ FOOTER STYLES
 
 */
 footer {
+  position: relative;
   background-color: #413644;
   display: flex;
   padding: 6% 0;
@@ -543,10 +546,12 @@ footer {
 PETAL STYLES
 
 */
+
 .cherry{
   position: fixed;
   max-height: 40px;
   max-width: 45px;
+  z-index: -1;
   
 }
 .rotate-1{
@@ -555,7 +560,6 @@ PETAL STYLES
 .petal--0{
   top: 10vh;
   left: 30vw;
-  animation:  petal-0-animation 10000ms 0ms infinite alternate;
 }
 
 .petal--1{
@@ -577,7 +581,6 @@ PETAL STYLES
 .petal--5{
   top: 22vh;
   left: 68vw;
-  animation: petal-0-animation 9000ms 0ms infinite reverse;
 }
 .petal--6{
   top: 60vh;
@@ -592,20 +595,57 @@ PETAL STYLES
   left: 85vw;
 }
 
-@keyframes petal-0-animation{
-    0%{
-        transform: translateY(0) translateX(0);
-    }
-    20%{
-      transform: translateY(2vh) translateX(-4vh);
-    }
-    40%{
-        transform: translateY(5vh) translateX(-3vh);
-    }
-      40%{
-        transform: translateY(9vh) translateX(-6vh);
-    }
-    100%{
-        transform: translateY(10vh) translateX(-9vh);
-    }
+/*
+
+MEDIA QUERIES
+
+*/
+
+/* Small phones, tablets, large smart phones*/
+@media (max-width:768px) {
+  .title{
+    font-size: 94px;
+  }
+  /* section{
+    padding: 12px;
+  } */
+  .modal{
+    flex-direction: column-reverse;
+    top: 0  ;
+    left: 0;
+    transform: none;
+    height: auto;
+    width: 100%;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+  .modal__half,
+  .modal__contact{
+    width: 100%;
+    padding: 20px 20px;
+    height: 50vh;
+  }
+  .form__item{
+    max-height: 100px;
+  }
+  .modal__about--desc{
+    font-size: 16px;
+  }
+  .header__content{
+    width: 80%;
+  }
+}
+/* Small phones*/
+@media (max-width:480px){
+.title{
+  font-size: 62px;
+}
+
+.project__desc{
+  font-size: 16px;
+}
+.project__desc--wrapper{
+  left: 0;
+  text-align: center;
+}
 }
