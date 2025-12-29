@@ -20,7 +20,7 @@
                 <!-- <img src="" alt="" class="logo"> -->
             </figure>
             <ul class="nav__links--list">
-                <li onclick="toggleModal()"class="nav__link">
+                <li onclick="toggleModal()" class="nav__link">
                     <a href="#" class="
     nav__link--anchor
     link__hover
@@ -34,7 +34,7 @@
     link__hover--pink
     ">Projects</a>
                 </li>
-                <li onclick="toggleModal()"class="nav__link">
+                <li onclick="toggleModal()" class="nav__link">
                     <a href="#" class="
     nav__link--anchor
     link__hover
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <a href="#">
-            <button class="mailTo click" onclick="toggleModal()"><i class="fa-regular fa-envelope"></i></button>
+                <button class="mailTo click" onclick="toggleModal()"><i class="fa-regular fa-envelope"></i></button>
             </a>
             <a href="#projects" class="scroll">
                 <div class="scroll__icon click"></div>
@@ -93,7 +93,7 @@
                     <br>
                     I'm currently a student in the FES Institute program and am <span class="purple">eager</span> to
                     build a portfolio of <span class="purple">amazing projects!</span>
-                    
+
                 </p>
                 <div class="languages__icons--wrapper">
                     <div class="languages__icons--container">
@@ -112,10 +112,20 @@
                                 alt="JavaScript Logo" class="language__img"></figure>
                         <span class="language__name">JavaScript</span>
                     </div>
+                           <div class="languages__icons--container">
+                        <figure><img src="./assets/react.svg"
+                                alt="React Logo" class="language__img"></figure>
+                        <span class="language__name">React</span>
+                    </div>
+                           <div class="languages__icons--container">
+                        <figure><img src="./assets/firebase.svg"
+                                alt="Firebase Logo" class="language__img"></figure>
+                        <span class="language__name">Firebase</span>
+                    </div>
                 </div>
             </div>
             <div class="modal__half modal__contact">
-                <button class="exit click"><i class="fa-solid fa-times"></i></button>
+                <button class="exit click"><i class="fa-solid fa-times" onclick="toggleModal()"></i></button>
                 <h3 class="modal__contact--title">
                     Interested?
                 </h3>
@@ -167,22 +177,22 @@
                 <ul class="projects__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <img src="./assets/Notflix.JPG" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__desc--wrapper">
                                 <h3 class="project__desc--title">
-                                    Project 1
+                                    Notflix
                                 </h3>
                                 <h4 class="project__desc--sub-title">
                                     HTML, CSS, JavaScript
                                 </h4>
-                                <p class="project__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Voluptatibus architecto doloremque, asperiores voluptatem tempora repellat.</p>
+                                <p class="project__desc">This project is a Netflix clone built using HTML, CSS, and
+                                    JavaScript. The clone functions only as a movie database </p>
                                 <div class="project__desc--links">
-                                    <a href="#" class="project__desc--link" target="_blank">
+                                    <a href="https://github.com/WestOfBree/Module-6__Final-Project" class="project__desc--link" target="_blank">
                                         <i class=" fa-brands fa-github-alt"></i>
                                     </a>
-                                    <a href="#" class="project__desc--link" target="_blank">
+                                    <a href="https://module-6-final-project.vercel.app/" class="project__desc--link" target="_blank">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -249,10 +259,11 @@
         <div class=" container">
             <div class="footer__row row">
                 <figure>
-                    <img src="./assets/logo.svg" class="footer__logo" alt="">
+                    <i class="fa-solid fa-cat logo footer__logo"></i>
+                    <!-- <img src="./assets/logo.svg" class="footer__logo" alt=""> -->
                 </figure>
                 <div class="footer__social-list">
-                    <a href="#" class="footer__social--link link__hover link__hover--white" target="_blank">GitHub</a>
+                    <a href="https://github.com/WestOfBree" class="footer__social--link link__hover link__hover--white" target="_blank">GitHub</a>
                     <a href="#" class="footer__social--link link__hover link__hover--white" target="_blank">LinkedIn</a>
                     <a href="#" class="footer__social--link link__hover link__hover--white" target="_blank">Email</a>
                     <a href="#" class="footer__social--link link__hover link__hover--white" target="_blank">Resume</a>

@@ -31,6 +31,7 @@ function toggleModal(){
      isModalOpen = !isModalOpen;
     document.body.classList +=" modal--open";
 }
+
 function moveBackground(event){
     const petals= document.querySelectorAll(".cherry")
     let x = event.clientX * scaleFactor;

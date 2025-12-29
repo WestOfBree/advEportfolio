@@ -312,13 +312,14 @@ MODAL STYLES
 }
 .modal__about--desc {
   line-height: 1.75;
-  padding: 12px 24px 32px 24px;
+  padding: 32px;
   color: white;
 }
 .languages__icons--wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  width: calc(100% / 3 * 2);
   margin-bottom: 32px;
 }
 .languages__icons--container {
